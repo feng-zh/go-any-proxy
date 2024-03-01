@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	logger "github.com/feng-zh/go-any-proxy/internal/flogger"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 	"io"
 	"net"
 	"regexp"
