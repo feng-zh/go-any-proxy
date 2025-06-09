@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"strings"
 	"sync"
+	"time"
 )
 
 type ipTableHandler struct {
@@ -27,6 +28,7 @@ func InstallIPTables(noProxyList, proxyPorts string, listenPort, mark int) (hand
 	}
 
 	//_RANDOM=${RANDOM}
+	rand.Seed(time.Now().UnixNano())
 	random := rand.Intn(1 << 16)
 
 	//IPTABELE_OUTPUT_CHAIN=PROXY_OUTPUT_${_RANDOM}

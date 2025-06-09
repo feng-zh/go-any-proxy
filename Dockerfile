@@ -10,7 +10,7 @@ RUN docker/docker-build.sh
 
 FROM alpine
 
-LABEL maintainer = "Feng Zhou <feng.zh@gmail.com>"
+LABEL maintainer="Feng Zhou <feng.zh@gmail.com>"
 
 RUN apk add iptables; rm -rf /var/cache/apk/*
 
